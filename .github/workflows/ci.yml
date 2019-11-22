@@ -13,5 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: pull arduino-cli image
-      run: docker pull arduino/arduino-cli:builder-1
+    - name: pull latest arduino tarball
+      run: wget https://www.arduino.cc/download_handler.php?f=/arduino-1.8.10-linux64.tar.xz
+    - name: extract files
+      run: tar xf arduino-1.8.10-linux64.tar.xz
+    - name: install arduino dependencies
+      run: ./install.sh
