@@ -13,6 +13,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/arduino-build@v1
     - name: pull arduino-cli image
       run: docker pull arduino/arduino-cli
