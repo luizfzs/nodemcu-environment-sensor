@@ -18,4 +18,4 @@ jobs:
     - name: extract files
       run: tar xvf arduino-1.8.10-linux64.tar.xz
     - name: install arduino dependencies
-      run: arduino-1.8.10-linux64/install.sh
+      run: arduino-1.8.10/install.sh
