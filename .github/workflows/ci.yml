@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: pull latest arduino tarball
-      run: wget -O arduino-1.8.10-linux64.tar.xz https://www.arduino.cc/download_handler.php?f=/arduino-1.8.10-linux64.tar.xz
+      run: wget https://downloads.arduino.cc/arduino-1.8.10-linux64.tar.xz
     - name: extract files
       run: tar xf arduino-1.8.10-linux64.tar.xz
     - name: install arduino dependencies
