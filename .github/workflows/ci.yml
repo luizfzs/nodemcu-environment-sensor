@@ -14,4 +14,4 @@ jobs:
 
     steps:
     - name: pull arduino-cli image
-      run: docker pull arduino/arduino-cli
+      run: docker pull arduino/arduino-cli:builder-1
