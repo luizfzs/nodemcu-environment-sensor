@@ -15,3 +15,7 @@ jobs:
     steps:
     - name: pull arduino-cli image
       run: docker pull arduino/arduino-cli:builder-1
+    - name: run docker image
+      run: docker run arduino/arduino-cli:builder-1
+#    - name: install nodemcu board
+#      run: docker 
